@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Color Game</title>
+    <style>
+        h1 {
+            font-size: 60px;
+            color: red;
+            text-align: center;
+        }
+
+        #container {
+            height: 260px;
+            width: 320px;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        input {
+            display: block;
+            margin: auto;
+            font-size: 30px;
+            color: red;
+            background-color: royalblue;
+        }
+
+        button {
+            display: block;
+            margin: auto;
+            font-size: 30px;
+            background-color: rgb(101, 92, 240);
+            color: rgb(231, 31, 17);
+            margin-top: 5px;
+        }
+
+        body {
+            height: 100%;
+        }
+
+        .scoree {
+            display: block;
+            margin: auto;
+            text-align: center;
+            font-size: 30px;
+            color: red;
+
+        }
+        .time_left{
+            display: block;
+            margin: auto;
+            text-align: center;
+            font-size: 30px;
+            color: red;
+        }
+        h4{
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My Color Game</h1>
+    <h4>Please write the name of color in given box</h4>
+    <span class="time_left">
+        <span>Time Left:</span>
+        <span id ="t30">30</span>
+    </span>
+    <span class="scoree">
+        <span id='txtt'>Score:</span>
+        <span id="scr">0</span>
+    </span>
+    <div id="container"></div><br><br>
+    <input type="text" id="inpp">
+    <button type="button" onclick="get_go()">Check</button>
+    <script src="color.js"></script>
+</body>
+
+</html>
