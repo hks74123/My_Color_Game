@@ -1,4 +1,4 @@
-
+ss=0;
 function my_game(){
   let randomColor = ['red','green','yellow','skyblue','black','blue','pink','orange','brown','purple']
     let final_color=Math.floor(Math.random() * randomColor.length);
@@ -29,10 +29,10 @@ function red_time(){
         document.getElementById('t30').innerText=tt
     }
     if(tt==0){
-        sessionStorage.setItem("ss", ss);
         document.getElementById('inpp').disabled=true;
         window.open("index1.html", "_self");
         clearInterval(ddtt);
+        sessionStorage.setItem("ss", ss);
     }
 }
 ddtt=setInterval(red_time,1000);
