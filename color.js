@@ -13,7 +13,7 @@ function get_go(){
     console.log(ss)
     console.log(m)
     console.log(f)
-    if(m==f){
+    if(m.toLowerCase()==f){
         ss=parseInt(ss)+1
         document.getElementById("scr").innerText=ss
     }
