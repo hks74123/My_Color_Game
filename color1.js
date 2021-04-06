@@ -3,7 +3,7 @@
 var score = sessionStorage.getItem("ss");
 
 function restart(){
-  open("color_game.html","_self");
+  open("https://gamstd74.github.io/My_Color_Game/","_self");
 }
 let fs=document.getElementById("yscore")
 fs.innerText=score;
