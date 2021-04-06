@@ -7,9 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Color Game</title>
     <style>
+        * {
+            font-family: Arial;
+        }
+
         h1 {
             font-size: 60px;
-            color: red;
+            color: white;
             text-align: center;
         }
 
@@ -18,27 +22,46 @@
             width: 320px;
             margin: auto;
             border-radius: 10px;
+            margin-top: 10px;
         }
 
         input {
             display: block;
             margin: auto;
             font-size: 30px;
-            color: red;
-            background-color: royalblue;
+            padding-left: 10px;
+            color: white;
+            outline: none;
+            background-color: grey;
         }
 
         button {
             display: block;
             margin: auto;
             font-size: 30px;
-            background-color: rgb(101, 92, 240);
-            color: rgb(231, 31, 17);
-            margin-top: 5px;
+            /* color: white; */
+            margin-top: 20px;
+            border-radius: 15px;
+            outline: none;
+            width: 12%;
+            background: #FC5C7D;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #6A82FB, #FC5C7D);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         }
 
         body {
             height: 100%;
+            background: #3C3B3F;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #605C3C, #3C3B3F);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
         }
 
         .scoree {
@@ -46,19 +69,67 @@
             margin: auto;
             text-align: center;
             font-size: 30px;
-            color: red;
+            color: white;
 
         }
-        .time_left{
+
+        .time_left {
             display: block;
             margin: auto;
             text-align: center;
             font-size: 30px;
             color: red;
         }
-        h4{
+
+        h4 {
             font-size: 20px;
             text-align: center;
+            color: aqua;
+        }
+
+        .hem:hover {
+            animation: hemant 4s infinite;
+        }
+
+        @keyframes hemant {
+            from {
+                background: #6A82FB;
+            }
+
+            to {
+                background: #FC5C7D;
+            }
+        }
+
+        @media(max-width: 992px){
+            .hem{
+                width: 20%;
+            }
+        }
+
+        @media(max-width: 596px){
+            .hem{
+                width: auto;
+            }
+        }
+
+        @media (max-width: 445px) {
+            h1 {
+                font-size: 250%;
+            }
+
+        }
+
+        @media (max-width: 420px) {
+            #inpp {
+                width: 75%;
+            }
+        }
+
+        @media (max-width: 345px) {
+            #container {
+                width: auto;
+            }
         }
     </style>
 </head>
@@ -68,7 +139,7 @@
     <h4>Please write the name of color in given box</h4>
     <span class="time_left">
         <span>Time Left:</span>
-        <span id ="t30">30</span>
+        <span id="t30">3000000</span>
     </span>
     <span class="scoree">
         <span id='txtt'>Score:</span>
@@ -76,7 +147,7 @@
     </span>
     <div id="container"></div><br><br>
     <input type="text" id="inpp">
-    <button type="button" onclick="get_go()">Check</button>
+    <button type="button" class="hem" onclick="get_go()">Check</button>
     <script src="color.js"></script>
 </body>
 
