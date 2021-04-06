@@ -31,7 +31,7 @@ function red_time(){
     if(tt==0){
         sessionStorage.setItem("ss", ss);
         document.getElementById('inpp').disabled=true;
-        window.open("pop_u.html", "_self");
+        window.open("index1.html", "_self");
         clearInterval(ddtt);
     }
 }
